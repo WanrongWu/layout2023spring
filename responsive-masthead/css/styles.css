@@ -28,7 +28,6 @@ nav h1 {
 }
 
 nav hr {
-
     color: rgb(76, 79, 88);
     height: 1px;
     background-color: rgb(189, 224, 232);
@@ -215,7 +214,7 @@ li.story_item:hover {
 }
 
 .feature_wrap hr {
-    width: 60%;
+    width: 100%;
 }
 
 .feature_wrap .story_content {
@@ -223,16 +222,16 @@ li.story_item:hover {
 }
 
 .section_headings {
-    font-size: 20px;
+    font-size: 25px;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    color: rgb(218, 129, 129);
+    color: rgb(196, 178, 178);
 
 }
 
 /* medium size */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
     ul.story_list {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -240,14 +239,14 @@ li.story_item:hover {
     }
 
     li.story_item {
-        margin-left: 3%;
-        margin-right: 3%;
+        margin-left: 1%;
+        margin-right: 1%;
     }
 
     .feature_wrap {
-        width: 70%;
+        width: 80%;
         padding: 60px;
-        padding-top: 30px;
+        padding-top: 50px;
         padding-bottom: 30px;
     }
 
