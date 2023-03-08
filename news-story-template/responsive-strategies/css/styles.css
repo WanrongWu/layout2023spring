@@ -39,16 +39,12 @@ img{
     transition: all 0.01s ease;
 }
 
-.story:hover img:hover{
-    filter:brightness(1.3);
-}
-
 .story-list h2{
     margin:0;
     font-weight:600;
 }
 
-.story-list a {
+.container a{
     color: inherit;
     text-decoration: none;
     transition: all 0.01s ease;
@@ -105,22 +101,7 @@ a .story-title{
     padding: 36px;
 }
 
-.story:hover {
-    animation: up-bump 0.5s ease;
-    background-position: 100% 100%;
-}
 
 hr{
     margin-top:2rem;
-}
-
-@keyframes up-bump {
-    0% { padding-top: 2em; }
-    50% { padding-top: 1.5em; }
-    100% { padding-top: 2em; }
-}
-@keyframes down-bump {
-    0% { padding-top: 2em; }
-    50% { padding-top: 2.5em; }
-    100% { padding-top: 2em; }
 }
