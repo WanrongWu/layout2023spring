@@ -25,13 +25,17 @@
                   {{ story.title }}
                 </h2>
   
+        <div class="cont">
+             <div class="l-col">
+                <!-- Story image -->
+                 <img v-bind:src="story.image">
+             </div>
+
+            <div class="r-col">
                 <!-- Story description -->
                 <p class="desc">
                   {{ story.description }}
                 </p>
-  
-                <!-- Story image -->
-                <img v-bind:src="story.image">
   
                 <!-- Story content (truncated) -->
                 <p class="content">
@@ -42,6 +46,8 @@
                 <span class="source">
                   {{ story.date }} | {{ story.source.name }}
                 </span>
+            </div>
+        </div>
   
             </article>
             </a>
