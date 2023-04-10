@@ -1,0 +1,74 @@
+body {
+    background-color: #cecece;
+}
+
+
+.stopwatch {
+    position: relative;
+    width: 300px;
+    top:50px;
+    left:70px;
+    height:300px;
+    cursor: pointer;
+}
+
+.stopwatch > * {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+}
+
+.stopwatch-background {
+    height: 80%;
+    background-color: rgb(230, 230, 190);
+    border-radius:50%;
+    width: 80%;
+    bottom: 0;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 200ms;
+    
+}
+
+.stopwatch-needle {
+    transform-origin: 50%,60%;
+}
+
+.stopwatch.running .stopwatch-needle {
+    animation: needle-rotate 5s linear infinite;
+}
+
+.stopwatch.danger .stopwatch-background {
+    background: red;
+}
+
+.rotated {
+    transform: rotate(45deg);
+}
+
+@keyframes needle-rotate {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.stopwatch:active .background{
+    background-color: rgb(236, 232, 212);
+}
+
+.stopwatch:active .button{
+    transform: translateY(5%);
+}
+
+p a {
+    font-size: 16px;
+    color:black;
+    top: 200px;
+    position: relative;
+}
