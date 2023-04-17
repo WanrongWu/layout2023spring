@@ -1,0 +1,163 @@
+/* timer */
+.timer{
+    color:rgb(245, 245, 245);
+    font-size:30px;
+    text-align:center;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color:#eaeaea;
+    position: fixed;
+    top:0;
+    right:0;
+    padding:76px;
+}
+
+/* span {
+
+} */
+
+/* .everything {
+
+    scale:1.3;
+} */
+
+/* .everything > * {
+    position: fixed;
+    top:0;
+    left:0;
+} */
+
+/* background image and outline */
+/* .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+} */
+
+.background > * {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.bkimg {
+    padding-top:26px;
+}
+
+.background {
+    position:fixed;
+    top: 40%;
+    left: 50%;
+    scale:300%;
+    background-size: cover;
+
+}
+
+
+
+
+/* bottom bar of bait and cast button */
+.bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 40px;
+}
+
+.bottom > * {
+    position: flex;
+    top:0;
+    left:0;
+}
+
+/* .cast {
+    top: 375px;
+    left:260px;
+    cursor:pointer;
+} */
+
+.csthv {
+    /* top: 375px;
+    left:260px;
+    cursor:pointer; */
+    display: none;
+}
+
+
+/* icons of sound,pause and quit */
+.icons {
+    position: fixed;
+    top:40px;
+    right:10px;
+}
+
+.icons > *{
+    display:flex;
+}
+
+.sdon {
+    /* top: 45px;
+    left: 596px; */
+    cursor: pointer;
+    scale: 0.85;
+}
+
+.mute {
+    /* top: 45px;
+    left: 596px; */
+    cursor: pointer;
+    scale: 0.8;
+}
+
+.pause {
+    /* top: 75px;
+    left: 599px; */
+    cursor: pointer;
+    scale: 0.88;
+}
+
+.logout {
+    /* top: 104px;
+    left: 599px; */
+    cursor: pointer;
+    scale: 0.85;
+}
+
+
+/* scorepanel */
+.score {
+    top: 0;
+    right: 0;
+    position: fixed;
+}
+
+.scorepanel {
+    padding:40px;
+}
+
+/* inventory */
+.collapsible {
+    position:fixed;
+    top:150px;
+    right:40px;
+}
+
+.collapsible > *{
+    position:relative;
+    scale: 1.1;
+}
+
+.contentbox {
+    padding-top:10px;
+    scale: 1.1;
+}
+
+.collapsible .contentbox {
+    display:none;
+}
+
+.collapsible.active .contentbox {
+    display:block;  
+}
