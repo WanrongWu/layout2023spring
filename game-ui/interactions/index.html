@@ -2,7 +2,30 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="css/fishingbar.css" rel="stylesheet">
 <link href="css/all.css" rel="stylesheet">
+
+<script>
+$(document).ready(function(){
+    $('#show').click(function() {
+      $('.fishingbar').toggle("slide");
+    });
+});
+
+$(document).ready(function(){
+    $('#showstore').click(function() {
+      $('.shopol').toggle("slide");
+    });
+});
+
+$(document).ready(function(){
+    $('#showcol').click(function() {
+      $('.colol').toggle("slide");
+    });
+});
+</script>
+
 </head>
 
 <body>
@@ -11,18 +34,11 @@
 
       <img src="assets/grid.png" class="grid">
   
-
   <div class="mainpanel">
 
       <div class="window">
         <img src="assets/backimg.svg" class="bkimg">
         <img src="assets/outline.svg" class="outline">
-      </div>
-
-      <div class="icons">
-        <img src="assets/sdon.svg" class="sdon">
-        <img src="assets/logout.svg" class="logout">
-        <img src="assets/pause.svg" class="pause">
       </div>
 
       <div class="score">
@@ -42,28 +58,42 @@
     </div>
 
     <div class="bottom">
-      <img src="assets/baitamt.svg" class="baitamt">
-      <img src="assets/cast.svg" class="cast">
-      <img src="assets/casthover.svg" class="csthv">
+      <!-- <img src="assets/baitamt.svg" class="baitamt"> -->
+      <div id="show">
+        <img src="assets/cast.svg" class="cast">
+      </div>
+      <img src="assets/casthover.svg" class="casthv">  
+    </div>
+
+    <div class="icons">
+      <img src="assets/sdon.svg" class="sdon">
+      <img src="assets/pause.svg" class="pause">
+      <img src="assets/logout.svg" class="logout">
+    </div>
+
+    <div class="fishingbar rolling" style="display: none;">
+      <div class ="fb-bckg"></div>
+      <img src="assets/fbbox.svg" class="fbbox">
+      <img src="assets/colorbar.svg" class="colorbar">
+      <img src="assets/rbar.svg" class="rbar rolling">
     </div>
 
   </div>
 
+  <div id="showstore">
   <img src="assets/store.svg" class="store">
+  </div>
+  <img src="assets/shopol.svg" class="shopol" style="display: none;">
+
+  <div id="showcol">
   <img src="assets/collection.svg" class="collection">
+  </div>
+  <img src="assets/colol.svg" class="colol" style="display: none;">
  
-
-    <!-- </div> -->
-
-    
-    <!-- <img src="soundon" onclick="this.src='mute'"> -->
-
-    <div></div>
 
 
   <script src="js/timer.js"></script>
   <script src="js/invt.js"></script>
-  <script src="js/hover.js"></script>
 </body>
 
 </html>

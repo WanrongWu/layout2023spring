@@ -1,0 +1,9 @@
+.cast {
+    position: absolute; 
+    cursor:pointer;   
+}
+
+.cast:hover {
+     content: url("assets/casthover.svg");
+     display:none;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="css/fishingbar.css" rel="stylesheet">
+<link href="css/all.css" rel="stylesheet">
+
+<script>
+$(document).ready(function(){
+    $('#show').click(function() {
+      $('.fishingbar').toggle("slide");
+    });
+});
+</script>
+
+</head>
+<body>
+
+<div id="show">
+  <img src="assets/cast.svg" class="cast">
+</div>
+
+<div class="fishingbar rolling" style="display: none;">
+  <div class ="fb-bckg"></div>
+  <img src="assets/fbbox.svg" class="fbbox">
+  <img src="assets/colorbar.svg" class="colorbar">
+  <img src="assets/rbar.svg" class="rbar rolling">
+</div>
+
+ </div>
+</body>
+</html>
