@@ -1,0 +1,15 @@
+div{
+    color:rgb(245, 245, 245);
+    font-size:30px;
+    text-align:center;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color:#eaeaea;
+
+}
+
+
+span {
+    position: absolute;
+    top: 60px;
+    left: 560px;
+}
