@@ -1,0 +1,31 @@
+.storecontent {
+    position:fixed;
+    top:20%;
+    left:15%;
+    height:450px;
+    width:659px;
+}
+
+/* .shopol {
+    position:fixed;
+    top:20%;
+    left:15%;
+    scale:110%;
+} */
+
+
+.shopol {
+    z-index:-1;
+    scale:110%;
+}
+
+.storect {
+    position:fixed;
+    height:450px;
+    width:659px;
+    top: 20%;
+    left: 15%;
+    scale:110%;
+    padding:40px;
+
+}
