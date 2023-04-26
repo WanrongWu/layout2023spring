@@ -7,29 +7,30 @@
 <link href="css/all.css" rel="stylesheet">
 <link href="css/collection.css" rel="stylesheet">
 <link href="css/store.css" rel="stylesheet">
+<title>Fishing</title>
 
 <script>
 $(document).ready(function(){
     $('#show').click(function() {
-      $('.fishingbar').toggle("slide");
+      $('.fishingbar').toggle();
     });
 });
 
 $(document).ready(function(){
     $('#showstore').click(function() {
-      $('.storecontent').toggle("slide");
+      $('.instore').toggle();
     });
 });
 
 $(document).ready(function(){
     $('#showcol').click(function() {
-      $('.scrollbox').toggle("slide");
+      $('.scrollbox').toggle();
     });
 });
 
 $(document).ready(function(){
     $('#show').click(function() {
-      $('.timer').toggle("slide");
+      $('.timer').toggle();
     });
 });
 </script>
@@ -100,12 +101,43 @@ $(document).ready(function(){
   <div id="showstore">
   <img src="assets/store.svg" class="store">
   </div>
-  <div class="storecontent"  style="display: none;">
+  <div class="instore"  style="display: none;">
   <img src="assets/shopol.svg" class="shopol">
   
     <div class="storect">
-      <img src="assets/scrollboxfish/instore.svg" class="instore">
-    </div>
+      <div class="upgraderod">
+        <img src="assets/scrollboxfish/rod.svg" class="rod">
+        <div class="rightcol">
+          <div class="leftinright">
+            <img src="assets/rodl1.svg" class="l1">
+            <img src="assets/regularrod.svg" class="regularrod">
+            <div class="properties">
+              <img src="assets/time.svg" class="time">
+              <img src="assets/enchant.svg" class="enchant">
+            </div>
+          </div>
+            <img src="assets/upgrade.svg" class="upgrade">
+        </div>
+      </div>
+
+      <div class="upgradebucket">
+        <img src="assets/scrollboxfish/bucket.svg" class="bucket">
+        <div class="bucketright">
+          <div class="leftinright">
+            <img src="assets/bucketl1.svg" class="l1">
+            <img src="assets/regularbucket.svg" class="regularbucket">
+            <div class="properties">
+              <img src="assets/hold.svg" class="hold">
+            </div>
+
+          </div>
+
+                <img src="assets/upgrade.svg" class="upgrade">
+
+          </div>
+        </div>
+      </div>
+
   </div>
 
   <div id="showcol">
