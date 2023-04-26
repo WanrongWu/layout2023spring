@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="css/fishingbar.css" rel="stylesheet">
+<link href="css/all.css" rel="stylesheet">
+<link href="css/collection.css" rel="stylesheet">
+<link href="css/store.css" rel="stylesheet">
+<title>Fishing</title>
+
+<script>
+$(document).ready(function(){
+    $('#show').click(function() {
+      $('.fishingbar').toggle();
+    });
+});
+
+$(document).ready(function(){
+    $('#showstore').click(function() {
+      $('.instore').toggle();
+    });
+});
+
+$(document).ready(function(){
+    $('#showcol').click(function() {
+      $('.scrollbox').toggle();
+    });
+});
+
+$(document).ready(function(){
+    $('#show').click(function() {
+      $('.timer').toggle();
+    });
+});
+</script>
+
+</head>
+
+<body>
+
+    <!-- background image and outline -->
+
+  <img src="assets/grid.png" class="grid">
+  
+  <div class="mainpanel">
+
+      <div class="window">
+        <img src="assets/backimg.svg" class="bkimg">
+        <img src="assets/outline.svg" class="outline">
+      </div>
+
+      <div class="score">
+        <img src="assets/scorpn.svg" class="scorepanel">
+
+      </div>
+
+      <div class="timer" style="display:none;">
+        <img src="assets/timerot.svg" class="timerot">
+        <span id="timer"></span>
+    </div>
+
+    <div class="collapsible">
+      <img src="assets/ivtbutton.svg" class="ivbt">
+      <div class="contentbox">
+        <img src="assets/invtbox.svg" class="ivbox">
+          <div class="container2">
+            <img src="assets/scrollboxfish/fish.svg" class="image2">
+            <img src="assets/scrollboxfish/fish2.svg" class="image2">
+            <img src="assets/scrollboxfish/fish11.svg" class="image2">
+            <img src="assets/scrollboxfish/fish12.svg" class="image2">
+            <img src="assets/scrollboxfish/fish4.svg" class="image2">
+          </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <!-- <img src="assets/baitamt.svg" class="baitamt"> -->
+      <div id="show">
+        <img src="assets/cast.svg" class="cast">
+      </div>
+      <img src="assets/casthover.svg" class="casthv">  
+    </div>
+
+    <div class="icons">
+      <img src="assets/sdon.svg" class="sdon">
+      <img src="assets/pause.svg" class="pause">
+      <img src="assets/logout.svg" class="logout">
+    </div>
+
+    <div class="fishingbar rolling" style="display: none;">
+      <div class ="fb-bckg"></div>
+      <img src="assets/fbbox.svg" class="fbbox">
+      <img src="assets/colorbar.svg" class="colorbar">
+      <img src="assets/rbar.svg" class="rbar rolling">
+      <!-- <button id="stop" class="btstop" type="button">STOP</button> -->
+    </div>
+
+  </div>
+
+  <div id="showstore">
+  <img src="assets/store.svg" class="store">
+  </div>
+  <div class="instore"  style="display: none;">
+  <img src="assets/shopol.svg" class="shopol">
+  
+    <div class="storect">
+      <div class="upgraderod">
+        <img src="assets/scrollboxfish/rod.svg" class="rod">
+        <div class="rightcol">
+          <div class="leftinright">
+            <img src="assets/rodl1.svg" class="l1">
+            <img src="assets/regularrod.svg" class="regularrod">
+            <div class="properties">
+              <img src="assets/time.svg" class="time">
+              <img src="assets/enchant.svg" class="enchant">
+            </div>
+          </div>
+            <img src="assets/upgrade.svg" class="upgrade">
+        </div>
+      </div>
+
+      <div class="upgradebucket">
+        <img src="assets/scrollboxfish/bucket.svg" class="bucket">
+        <div class="bucketright">
+          <div class="leftinright">
+            <img src="assets/bucketl1.svg" class="l1">
+            <img src="assets/regularbucket.svg" class="regularbucket">
+            <div class="properties">
+              <img src="assets/hold.svg" class="hold">
+            </div>
+
+          </div>
+
+                <img src="assets/upgrade.svg" class="upgrade">
+
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+  <div id="showcol">
+  <img src="assets/collection.svg" class="collection">
+  </div>
+
+  <div class="scrollbox" style="display:none;">
+  <img src="assets/colol.svg" class="colol">
+  <div class="container">
+    <img src="assets/scrollboxfish/fish.svg" class="image">
+    <img src="assets/scrollboxfish/fish2.svg" class="image">
+    <img src="assets/scrollboxfish/fish3.svg" class="image">
+    <img src="assets/scrollboxfish/fish4.svg" class="image">
+    <img src="assets/scrollboxfish/fish5.svg" class="image">
+    <img src="assets/scrollboxfish/fish6.svg" class="image">
+    <img src="assets/scrollboxfish/fish7.svg" class="image">
+    <img src="assets/scrollboxfish/fish8.svg" class="image">
+    <img src="assets/scrollboxfish/fish9.svg" class="image">
+    <img src="assets/scrollboxfish/fish10.svg" class="image">
+    <img src="assets/scrollboxfish/fish11.svg" class="image">
+    <img src="assets/scrollboxfish/fish12.svg" class="image">
+    <img src="assets/scrollboxfish/fish13.svg" class="image">
+    <img src="assets/scrollboxfish/fish14.svg" class="image">
+    <img src="assets/scrollboxfish/fish15.svg" class="image">
+    <img src="assets/scrollboxfish/fish16.svg" class="image">
+    <img src="assets/scrollboxfish/fish17.svg" class="image">
+    <img src="assets/scrollboxfish/fish18.svg" class="image">
+    <img src="assets/scrollboxfish/fish19.svg" class="image">
+    <img src="assets/scrollboxfish/fish20.svg" class="image">
+    <img src="assets/scrollboxfish/fish21.svg" class="image">
+    <img src="assets/scrollboxfish/fish22.svg" class="image">
+    <img src="assets/scrollboxfish/fish23.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+    <img src="assets/scrollboxfish/unknown.svg" class="image">
+
+  </div>
+  </div>
+ 
+
+
+  <script src="js/timer.js"></script>
+  <script src="js/invt.js"></script>
+  <script src="js/cast.js"></script>
+</body>
+
+</html>

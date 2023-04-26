@@ -1,0 +1,37 @@
+.scrollbox {
+    position:fixed;
+    top:27%;
+    right:6%;
+    height:493px;
+    width:347px;
+    font:16px/26px Georgia, Garamond, Serif;
+    /* overflow:auto； */
+}
+
+.colol {
+    z-index: -1;
+}
+
+.container {
+    position:fixed;
+    top:32%;
+    /* padding-top:35px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height:456px;
+    width:347px;
+    overflow:auto;
+
+}
+
+.image {
+    max-width: 40px;
+    margin: 0px 20px 20px 20px;
+    padding: 5% 5% 5% 5%;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.image:hover {
+    scale:120%;
+}
